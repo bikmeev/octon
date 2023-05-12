@@ -7,4 +7,5 @@ _________________________________________
 Now on:
  - Android
  - Windows
- - Linux
+
+Download here - https://github.com/bikmeev/octon/tree/main/build
