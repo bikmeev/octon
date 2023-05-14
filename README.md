@@ -1,6 +1,8 @@
 # octon
 Anonymous Messanger
 
+![alt text](img/banner.png)
+
 Octon messanger
 _________________________________________
 
