@@ -1,0 +1,29 @@
+/
+      Throws a SecurityException if the
+      calling thread is not allowed to open a socket connection to the
+      specified host and port number.
+      
+      A port number of -1 indicates that the calling
+      method is attempting to determine the IP address of the specified
+      host name.
+      
+      This method calls checkPermission with the
+      SocketPermission(host+":"+port,"connect") permission if
+      the port is not equal to -1. If the port is equal to -1, then
+      it calls checkPermission with the
+      SocketPermission(host,"resolve") permission.
+      
+      If you override this method, then you should make a call to
+      super.checkConnect
+      at the point the overridden method would normally throw an
+      exception.
+     
+      @param      host   the host name port to connect to.
+      @param      port   the protocol port to connect to.
+      @exception  SecurityException  if the calling thread does not have
+                  permission to open a socket connection to the specified
+                    host and port.
+      @exception  NullPointerException if the host argument is
+                  null.
+      @see        #checkPermission(java.security.Permission) checkPermission
+     /
